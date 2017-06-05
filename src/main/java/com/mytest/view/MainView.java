@@ -13,6 +13,7 @@ import javax.swing.filechooser.FileSystemView;
 
 import com.mytest.entity.*;
 import com.mytest.repository.StudentDAO;
+import com.mytest.repository.StudentDAOImpl;
 import com.mytest.utils.*;
 
 public class MainView implements ActionListener {
@@ -30,7 +31,7 @@ public class MainView implements ActionListener {
 
 	public MainView() {
 		nameFrame = "TestApplication";
-		studentDAO = new StudentDAO();
+		studentDAO = new StudentDAOImpl();
 		createAndShowGUI();
 	}
 
